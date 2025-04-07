@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <div class="gallery">
+        <img src="https://picsum.photos/300/300?random=1" alt="Random Image 1">
+        <img src="https://picsum.photos/300/300?random=2" alt="Random Image 2">
+        <img src="https://picsum.photos/300/300?random=3" alt="Random Image 3">
+        <img src="https://picsum.photos/300/300?random=4" alt="Random Image 4">
+        <img src="https://picsum.photos/300/300?random=5" alt="Random Image 5">
+        <img src="https://picsum.photos/300/300?random=6" alt="Random Image 6">
+        <img src="https://picsum.photos/300/300?random=7" alt="Random Image 7">
+        <img src="https://picsum.photos/300/300?random=8" alt="Random Image 8">
+        <img src="https://picsum.photos/300/300?random=9" alt="Random Image 9">
+        <img src="https://picsum.photos/300/300?random=10" alt="Random Image 10">
+        <img src="https://picsum.photos/300/300?random=11" alt="Random Image 11">
+        <img src="https://picsum.photos/300/300?random=12" alt="Random Image 12">
+    </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  h2,h3{
+    color: #ffcc00;
+  }
+  
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  section {
+    display: none;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Show section when targeted */
+  #hero:target,
+  #projects:target,
+  #about:target,
+  #contact:target {
+    display: block;
+  }
+  
+  /* Show Home by default */
+  body:not(:has(:target)) #hero {
+    display: block;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ff6600;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+  }
+  .typing-text {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: #ffcc00;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .type-line {
+    width: 0;
+    border-right: 2px solid #ffcc00;
+    animation: typing 2s steps(40, end) forwards, blink 0.6s step-end infinite;
+    overflow: hidden;
+  }
+
+  .line2 { animation-delay: 2.2s; }
+  .line3 { animation-delay: 4.6s; }
+  .line4 { animation-delay: 7s; }
+  .line5 { animation-delay: 9.4s; }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  .hero-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.05);
+  }
+  

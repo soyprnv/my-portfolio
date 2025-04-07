@@ -1,0 +1,101 @@
+.about p {
+    font-size: 18px;
+    color: #cccccc;
+    margin-top: 10px;
+  }
+  
+  .about .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .about .buttons a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .about .buttons a.linkedin {
+    background-color: #0077b5;
+  }
+  
+  .about .buttons a.linkedin:hover {
+    background-color: #005582;
+  }
+  
+  .about .buttons a.instagram {
+    background-color: #E1306C;
+  }
+  
+  .about .buttons a.instagram:hover {
+    background-color: #c62b61;
+  }
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background-image: url('../img/location.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+  .about::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* dark overlay */
+    z-index: 0;
+  }
+  
+  .about * {
+    position: relative;
+    z-index: 1;
+  }
+  
+
+
+  
+  .about h2 {
+    font-size: 36px;
+    color: #ffcc00;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  
+  .about-content p {
+    margin-bottom: 20px;
+  }
+  
+  .about-content .highlight {
+    font-style: italic;
+    color: #ff9900;
+    font-size: 20px;
+  }
+  .buttons a.github {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    margin: 5px;
+  }
+  
+  .buttons a.github:hover {
+    background-color: #24292e;
+  }
+  
+  

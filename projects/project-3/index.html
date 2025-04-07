@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook Cover</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #806f6f;
+            margin: 0;
+        }
+
+        .book {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .cover {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #ff6b6b, #ffb86b);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transform-origin: left;
+            transition: transform 1s ease-in-out;
+            position: absolute;
+        }
+
+        .book:hover .cover {
+            transform: rotateY(-160deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="cover">Flip Me!</div>
+    </div>
+</body>
+</html>
